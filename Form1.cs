@@ -71,27 +71,20 @@ namespace Counter_train_Potucek
             {
                     sec++;
                     Set_time();
-
-                    //DateTime now = DateTime.Now;
+                    
                     if (sec < 10)
-                        //sec_label.Text ="0"+sec.ToString();
                         finalsec = "0" + sec.ToString();
                     else
-                        //sec_label.Text =  sec.ToString();
                         finalsec = sec.ToString();
 
                     if (min < 10)
                         finalmin = "0" + min.ToString();
-                        //min_label.Text = "0" + min.ToString();
                     else
-                        //min_label.Text = min.ToString();
                         finalmin = min.ToString();
 
                     if (hod < 10)
-                        //hod_label.Text = "0" + hod.ToString();
                         finalhod = "0" + hod.ToString();
                     else
-                        //hod_label.Text = hod.ToString();
                         finalhod = hod.ToString();
 
                     caption.Text = finalhod + " : " + finalmin + " : " + finalsec;
@@ -125,9 +118,6 @@ namespace Counter_train_Potucek
         private void Form1_DoubleClick(object sender, EventArgs e)
         {
             Setting settingsForm = new Setting(this);
-           // Label lab = new Label();
-           // settingsForm.interval_get = interval;
-           // settingsForm.size_get = Convert.ToInt16(lab.Font.Size);
             settingsForm.Show();
         }
 
